@@ -1,0 +1,235 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter&display=swap');
+
+:root {
+  --primary: #6FA89E; /* ngjyra jeshile nga logo */
+  --secondary: #B98E87; /* ngjyra rozë/pudër nga logo */
+  --dark: #4B4542; /* ngjyra gri e errët për tekst */
+  --light-bg: #FAF7F5; /* sfondi i faqes */
+  --font-primary: 'Inter', sans-serif;
+  --font-title: 'Playfair Display', serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--light-bg);
+  color: var(--dark);
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* Responsive hamburger menu */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  background: var(--dark);
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  nav li {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  background: url('assets/images/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--secondary);
+}
+
+.about {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.highlight-list li {
+  margin: 0.5rem 0;
+  list-style-type: square;
+}
+
+.testimonials {
+  background: #fff;
+  border-top: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+  text-align: center;
+}
+
+.testimonial {
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--font-primary);
+}
+
+button[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: var(--secondary);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background: var(--light-bg);
+  color: var(--dark);
+}
+
+.rounded-circle {
+    object-fit: cover;
+  }
