@@ -92,7 +92,6 @@
 * Contact form in the homepage
 * On submit: data is POSTed to `send.php`
 * Form data is logged to `form_log.txt`
-* Redirects to `thankyou.html`
 
 ---
 
