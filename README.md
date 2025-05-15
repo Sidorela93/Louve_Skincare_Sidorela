@@ -140,4 +140,9 @@ http://localhost/Louve_Skincare_Sidorela
 * It can be deployed on any PHP-compatible server.
 * Ideal for showcasing frontend layout skills with light backend logic.
 
+* ## 🕒 Time Spent
+- ~ 3 hours
+## ✨ Developed by
+**Sidorela** 
+
 
