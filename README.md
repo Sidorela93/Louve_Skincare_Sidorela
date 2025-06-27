@@ -1,6 +1,7 @@
-**Louve Skincare Homepage - Project Documentation**
+# Louve Skincare – WordPress Website
 
----
+Sito web realizzato con WordPress per il brand "Louve Skincare", con focus su estetica pulita e comunicazione efficace del prodotto.
+
 
 ### 📄 Basic Information
 
@@ -142,7 +143,9 @@ http://localhost/Louve_Skincare_Sidorela
 
 * ## 🕒 Time Spent
 - ~ 3 hours
-## ✨ Developed by
-**Sidorela** 
+
+## Autore
+Sidorela Demiris
+
 
 
